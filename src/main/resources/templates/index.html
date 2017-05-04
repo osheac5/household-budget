@@ -8,10 +8,23 @@
     <body>
         <h1>Sample Application</h1>
 
-        <div ng-app="">
+        <div ng-app="budget-input" ng-controller="budget-input-controller">
             <p>Category: <input type = "text" ng-model = "category"></p>
             <p>Hello <span ng-bind = "category"></span>!</p>
+            <br>
+            Full Name: {{fullName()}}
         </div>
+
+        <script>
+            var app = angular.module('budget-input', []);
+            app.controller('budget-input-controller', function($scope) {
+                $scope.firstName = "John";
+                $scope.lastName = "Doe";
+                $scope.fullName = function() {
+                    return $scope.firstName + " " + $scope.lastName;
+                };
+            });
+        </script>
 
         <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
         <script src = "budget-input-app/controllers/budget-input-controller.js"></script>
