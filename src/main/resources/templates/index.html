@@ -9,16 +9,16 @@
     <body>
         <h1>Sample Application</h1>
 
-        <div data-ng-app="budget-input" data-ng-controller="budget-input-controller">
-            <p>Category: <input type = "text" data-ng-model = "category"></p>
-            <p>Hello <span data-ng-bind = "category"></span>!</p>
+        <div ng-app="budgetinput" ng-controller="budgetinputcontroller">
+            <p>Category: <input type = "text" ng-model = "category"></p>
+            <p>Hello <span ng-bind = "category"></span>!</p>
             <br>
             Full Name: {{fullName()}}
         </div>
 
         <script type="text/javascript">
-            var app = angular.module('budget-input', []);
-            app.controller('budget-input-controller', function($scope) {
+            var app = angular.module('budgetinput', []);
+            app.controller('budgetinputcontroller', function($scope) {
                 $scope.firstName = "John";
                 $scope.lastName = "Doe";
                 $scope.fullName = function() {
