@@ -9,22 +9,17 @@
     <body>
         <h1>Sample Application</h1>
 
-        <div ng-app="budgetinput" ng-controller="budgetinputcontroller">
-            <p>Category123: <input type = "text" ng-model = "category"></p>
-            <p>Hello <span ng-bind = "category"></span>!</p>
-            <br>
-            Full Name: {{fullName()}}
+        <div ng-app="myApp" ng-controller="myCtrl">
+            Name: <input ng-model="firstname">
+            <h1>{{firstname}}</h1>
         </div>
 
-        <script type="text/javascript">
-            var app = angular.module('budgetinput', []);
-            app.controller('budgetinputcontroller', function($scope) {
-                $scope.firstName = "John";
-                $scope.lastName = "Doe";
-                $scope.fullName = function() {
-                    return $scope.firstName + " " + $scope.lastName;
-                };
-            });
+        <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.firstname = "John";
+            $scope.lastname = "Doe";
+        });
         </script>
         <!--<script src = "app/controllers/budget-input-controller.js"></script>-->
 
