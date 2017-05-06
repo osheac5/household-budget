@@ -3,25 +3,17 @@
 
     <head>
         <title>Household Budget</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     </head>
 
     <body>
         <h1>Sample Application</h1>
 
-        <div ng-app="myApp" ng-controller="myCtrl">
-            Name: <input ng-model="firstname">
-            <h1>{{firstname}}</h1>
+        <div class="container">
+            <h1>Database Output</h1>
+            <ul th:each="record : ${records}">
+                <li th:text="${record}"/>
+            </ul>
         </div>
-
-        <script>
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope) {
-            $scope.firstname = "John";
-            $scope.lastname = "Doe";
-        });
-        </script>
-        <!--<script src = "app/controllers/budget-input-controller.js"></script>-->
 
     </body>
 </html>
