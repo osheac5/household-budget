@@ -49,8 +49,9 @@ public class Main {
   }
 
   @RequestMapping("/")
-  String index(Map<String, Object> model) {
-    try (Connection connection = dataSource.getConnection()) {
+  String index() {
+    return "index";
+    /*try (Connection connection = dataSource.getConnection()) {
       Statement stmt = connection.createStatement();
       stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
       stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
@@ -64,9 +65,10 @@ public class Main {
       model.put("records", output);
       return "index";
     } catch (Exception e) {
-      model.put("message", e.getMessage());
+      //model.put("message", e.getMessage());
       return "error";
     }
+    */
   }
 
 
