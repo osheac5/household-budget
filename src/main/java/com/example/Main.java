@@ -16,6 +16,7 @@
 
 package com.example;
 
+import com.example.objectModel.Transaction;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -69,6 +72,17 @@ public class Main {
       return "error";
     }
     */
+  }
+
+  @GetMapping("/add")
+  public String add(Model model) {
+    model.addAttribute("transaction", new Transaction());
+    return "add";
+  }
+
+  @PostMapping("/add")
+  public String addTransaction(@ModelAttribute Transaction transaction) {
+    return "result";
   }
 
 
