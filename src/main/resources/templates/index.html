@@ -12,9 +12,16 @@
         <div class="app-container">
             <div ng-app="BudgetApp">
                 <div ng-controller="BudgetController">
-                    
+                    <form id="budget-form" ng-submit="processForm()">
+
+                        <!-- our nested state views will be injected here -->
+                        <div id="form-views" ui-view></div>
+                    </form>
+                    <pre>
+                        {{ formData }}
+                    </pre>
                     <div ui-view>
-                        <h1>{{greeting}}</h1>
+                        <!--<h1>{{greeting}}</h1>
                         <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">home</i></button>
                         <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">shopping_cart</i></button>
                         <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">flight_takeoff</i></button>
@@ -23,7 +30,7 @@
                         <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">weekend</i></button>
                         <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">tv</i></button>
                         <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">local_laundry_service</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">more_horiz</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">more_horiz</i></button>-->
                     </div>
                 </div>
             </div>

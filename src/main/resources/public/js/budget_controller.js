@@ -6,20 +6,20 @@ angular.module('BudgetApp', ['ui.router'])
             // route to show our basic form (/form)
             .state('form', {
                 url: '/form',
-                templateUrl: 'form.html',
-                controller: 'formController'
+                templateUrl: 'views/form.html',
+                controller: 'BudgetController'
             })
 
             // url will be /form/interests
             .state('form.category', {
                 url: '/category',
-                templateUrl: 'form-category.html'
+                templateUrl: 'views/form-category.html'
             })
 
             // url will be /form/payment
             .state('form.result', {
                 url: '/result',
-                templateUrl: 'form-result.html'
+                templateUrl: 'views/form-result.html'
             });
 
         // catch all route
