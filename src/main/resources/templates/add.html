@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Add Transaction</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+    <head>
+        <title>Add Transaction</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
     <body>
         <h1>Form</h1>
         <form action="#" th:action="@{/add}" th:object="${transaction}" method="post">
@@ -11,5 +11,12 @@
             <p>Message: <input type="text" th:field="*{note}" /></p>
             <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
         </form>
+        <script src="/js/angular.min.js"></script>
+        <script src="/js/hello_world_controller.js"></script>
+        <div ng-app="HelloWorldApp">
+            <div ng-controller="HelloWorldController">
+                <h1>{{greeting}}</h1>
+            </div>
+        </div>
     </body>
 </html>

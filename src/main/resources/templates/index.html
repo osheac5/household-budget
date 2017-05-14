@@ -6,26 +6,27 @@
     </head>
 
     <body>
-
+        <script src="/js/angular.min.js"></script>
+        <script src="/js/ui_router.min.js"></script>
+        <script src="/js/budget_controller.js"></script>
         <div class="app-container">
-            <h1>What did you buy?</h1>
-
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">home</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">shopping_cart</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">flight_takeoff</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">lightbulb_outline</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">restaurant</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">weekend</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">tv</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">local_laundry_service</i></button>
-            <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">more_horiz</i></button>
-
-            <!--<div class="container">
-                <h1>Database Output</h1>
-                <ul th:each="record : ${records}">
-                    <li th:text="${record}"/>
-                </ul>
-            </div>-->
+            <div ng-app="BudgetApp">
+                <div ng-controller="BudgetController">
+                    
+                    <div ui-view>
+                        <h1>{{greeting}}</h1>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">home</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">shopping_cart</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">flight_takeoff</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">lightbulb_outline</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">restaurant</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">weekend</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">tv</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">local_laundry_service</i></button>
+                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">more_horiz</i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
