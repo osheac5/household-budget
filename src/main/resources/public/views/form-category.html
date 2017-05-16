@@ -1,7 +1,14 @@
-<!-- form-result.html -->
-<div class="text-center">
-    <span class="glyphicon glyphicon-heart"></span>
-    <h3>This is the first page</h3>
+<html xmlns:th="http://www.thymeleaf.org">
+    <!-- form-profile.html -->
 
-    <button type="submit" class="btn btn-danger">Submit</button>
-</div>
+    <button id="home" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 1"><i class="material-icons">home</i></button>
+    <button id="groceries" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 2"><i class="material-icons">shopping_cart</i></button>
+    <button id="travel" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 3"><i class="material-icons">flight_takeoff</i></button>
+    <button id="utilities" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 4"><i class="material-icons">lightbulb_outline</i></button>
+    <button id="restaurant" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 5"><i class="material-icons">restaurant</i></button>
+    <button id="homeware" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 6"><i class="material-icons">weekend</i></button>
+    <button id="entertainment" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 7"><i class="material-icons">tv</i></button>
+    <button id="laundry" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 8"><i class="material-icons">local_laundry_service</i></button>
+    <button id="misc" ui-sref="form.result" type="button" class="btn btn-raised btn-primary btn-responsive" ng-click="formData.category = 9"><i class="material-icons">more_horiz</i></button>
+
+</html>

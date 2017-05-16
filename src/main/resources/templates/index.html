@@ -9,6 +9,7 @@
         <script src="/js/angular.min.js"></script>
         <script src="/js/ui_router.min.js"></script>
         <script src="/js/budget_controller.js"></script>
+        <script src="/js/category.js"></script>
         <div class="app-container">
             <div ng-app="BudgetApp">
                 <div ng-controller="BudgetController">
@@ -17,21 +18,6 @@
                         <!-- our nested state views will be injected here -->
                         <div id="form-views" ui-view></div>
                     </form>
-                    <pre>
-                        {{ formData }}
-                    </pre>
-                    <div ui-view>
-                        <!--<h1>{{greeting}}</h1>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">home</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">shopping_cart</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">flight_takeoff</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">lightbulb_outline</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">restaurant</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">weekend</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">tv</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">local_laundry_service</i></button>
-                        <button type="button" class="btn btn-raised btn-primary btn-responsive"><i class="material-icons">more_horiz</i></button>-->
-                    </div>
                 </div>
             </div>
         </div>
