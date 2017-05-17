@@ -55,7 +55,10 @@ body {
     border-radius:3px;
   }
   .material-icons {
-    font-size: 80px;
+      font-size: 80px;
+    }
+  .btn-primary {
+    margin: 10px;
   }
 }
 
