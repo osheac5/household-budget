@@ -16,6 +16,11 @@ angular.module('BudgetApp', ['ui.router'])
                 templateUrl: 'views/form-category.html'
             })
 
+            .state('form.amount', {
+                url: '/amount',
+                templateUrl: 'views/form-amount.html'
+            })
+
             // url will be /form/payment
             .state('form.result', {
                 url: '/result',

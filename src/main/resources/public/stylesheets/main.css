@@ -49,6 +49,31 @@ body {
     height: auto;
 }
 
+.form-group {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.text-input {
+    width: 40%;
+}
+
+/* BASIC STYLINGS
+============================================================================= */
+
+/* numbered buttons */
+#status-buttons                 {  }
+#status-buttons a               { color:#FFF; display:inline-block; font-size:25px; margin-right:60px; text-align:center; text-transform:uppercase; }
+#status-buttons a:hover         { text-decoration:none; }
+
+/* we will style the span as the circled number */
+#status-buttons span            { background:#080808; display:block; height:100px; margin:0 auto 10px; padding-top:30px; width:100px;
+    border-radius:50%; }
+
+/* active buttons turn light green-blue*/
+#status-buttons a.active span   { background:#00BC8C; }
+
 @media (max-width: 539px) {
   .btn-responsive {
     padding:2px 4px;
@@ -100,22 +125,3 @@ body {
     float: none;
     margin: 0 auto;
 }
-
-
-/* extra shite */
-
-/* style.css */
-/* BASIC STYLINGS
-============================================================================= */
-
-/* numbered buttons */
-#status-buttons                 {  }
-#status-buttons a               { color:#FFF; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
-#status-buttons a:hover         { text-decoration:none; }
-
-/* we will style the span as the circled number */
-#status-buttons span            { background:#080808; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px;
-    border-radius:50%; }
-
-/* active buttons turn light green-blue*/
-#status-buttons a.active span   { background:#00BC8C; }
