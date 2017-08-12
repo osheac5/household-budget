@@ -1,4 +1,5 @@
 $(document).ready(function() {
-  debugger;
-  $('.datepicker').datepicker(); //Initialise any date pickers
+  $date = $('.datepicker');
+  $date.datepicker();
+  $date.val($.datepicker.formatDate('dd/mm/yyyy', new Date()));
 })
