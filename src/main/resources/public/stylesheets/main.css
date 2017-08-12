@@ -129,3 +129,7 @@ body {
     float: none;
     margin: 0 auto;
 }
+
+.details-group {
+    font-size: 40px;
+}
