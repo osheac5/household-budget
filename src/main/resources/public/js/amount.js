@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  debugger;
   console.log("hello!");
   $date = $('.datepicker');
   $date.datepicker();
