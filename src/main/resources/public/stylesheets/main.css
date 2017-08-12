@@ -59,8 +59,8 @@ body {
     width: 100%
 }
 
-.submit-button {
-    font-size: 60px !important;
+.submit-button.btn {
+    font-size: 60px;
 }
 
 /* BASIC STYLINGS
