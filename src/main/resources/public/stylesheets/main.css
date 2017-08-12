@@ -74,52 +74,7 @@ body {
 /* active buttons turn light green-blue*/
 #status-buttons a.active span   { background:#00BC8C; }
 
-@media (max-width: 539px) {
-  .btn-responsive {
-    padding:2px 4px;
-    line-height: 1;
-    border-radius:3px;
-  }
-  .material-icons {
-      font-size: 80px;
-    }
-  .btn-primary {
-    margin: 10px;
-  }
-}
 
-@media (min-width: 540px) and (max-width: 739px) {
-  .btn-responsive {
-    padding: 4px 9px;
-    line-height: 1.2;
-  }
-  .material-icons {
-      font-size: 110px;
-  }
-
-}
-
-@media (min-width: 740px) and (max-width: 899px) {
-  .btn-responsive {
-    padding: 4px 9px;
-    line-height: 1.2;
-  }
-  .material-icons {
-      font-size: 150px;
-  }
-
-}
-
-@media (min-width: 900px) {
-  .btn-responsive {
-    padding: 4px 9px;
-    line-height: 1.2;
-  }
-  .material-icons {
-      font-size: 180px;
-  }
-
-}
 
 #form-container {
     float: none;
