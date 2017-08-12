@@ -29,7 +29,7 @@ angular.module('BudgetApp', ['ui.router'])
 
         // catch all route
         // send users to the form page
-        $urlRouterProvider.otherwise('/form/category');
+        $urlRouterProvider.otherwise('/form');
     })
 
     // our controller for the form
