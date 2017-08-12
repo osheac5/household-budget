@@ -5,11 +5,14 @@
         <input type="number" class="form-control text-input input-lg details-input" name="amount" ng-model="formData.amount">
     </div>
 
-    <div class="input-group date details-group">
+    <div class="form-group details-group" id="datepicker">
         <label th:for="date">Date</label>
         <input type="text" class="form-control text-input input-lg details-input" name="amount" ng-model="formData.amount">
-        <div class="input-group-addon">
-            <span class="glyphicon glyphicon-th"></span>
-        </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+          $('#datepicker').datepicker(); //Initialise any date pickers
+        })
+    </script>
 </html>
