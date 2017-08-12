@@ -133,3 +133,8 @@ body {
 .details-group {
     font-size: 40px;
 }
+
+.amount-input {
+    font-size: 60px;
+    height: 100px;
+}
