@@ -8,14 +8,12 @@
 
     <div class="form-group details-group">
         <label th:for="date">Date</label>
-        <input type="text" class="form-control text-input input-lg details-input datepicker" name="date" ng-model="formData.amount">
+        <input type="text" class="form-control text-input input-lg details-input datepicker" name="date" ng-model="formData.date">
     </div>
 
     <div class="submit-button">
-        <button type="button-lg" class="btn btn-primary submit-button">Submit</button>
+        <button type="submit" form="budget-form" value="Submit" class="btn btn-primary submit-button">Submit</button>
     </div>
 
     <script src="js/amount.js"></script>
-    <script>
-    </script>
 </html>
