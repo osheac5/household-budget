@@ -47,7 +47,7 @@ angular.module('BudgetApp', ['ui.router'])
                       method: 'POST',
                       url: '/add',
                       data: $scope.formData
-                      
+
                     }).then(function successCallback(response) {
                         console.log("woop");
                         $state.go('form.result');
