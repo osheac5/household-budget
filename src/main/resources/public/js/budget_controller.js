@@ -46,4 +46,13 @@ angular.module('BudgetApp', ['ui.router'])
             alert('awesome!');
         };
 
+        $http({
+          method: 'GET',
+          url: '/add'
+        }).then(function successCallback(response) {
+            console.log("woop")
+          }, function errorCallback(response) {
+            console.log("oops")
+          });
+
     });
