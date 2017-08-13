@@ -87,7 +87,7 @@ public class Main {
   }*/
 
     @PostMapping("/add")
-    public String addPost(String postStuff) {
+    public String addPost(@RequestParam("wola") String postStuff) {
         if (postStuff != null){
             System.out.println(" *** COSHEA *** in add function *** COSHEA *** \r\n" + postStuff);
         }
