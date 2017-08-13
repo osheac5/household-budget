@@ -48,7 +48,7 @@ angular.module('BudgetApp', ['ui.router'])
                       url: '/add'
                     }).then(function successCallback(response) {
                         console.log("woop");
-                        $state.go();
+                        $state.go('form.result');
                       }, function errorCallback(response) {
                         console.log("oops")
                       });
