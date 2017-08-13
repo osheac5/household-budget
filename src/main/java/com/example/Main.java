@@ -87,9 +87,9 @@ public class Main {
   }*/
 
     @PostMapping("/add")
-    public String addPost(Model model) {
-        System.out.println(" *** COSHEA *** in add function *** COSHEA *** \r\n" + model.toString());
-        model.addAttribute("transaction", new Transaction());
+    public String addPost(String postStuff) {
+        System.out.println(" *** COSHEA *** in add function *** COSHEA *** \r\n" + postStuff);
+        //model.addAttribute("transaction", new Transaction());
         return "add";
     }
 
