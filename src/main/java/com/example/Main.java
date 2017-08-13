@@ -76,6 +76,7 @@ public class Main {
 
   @GetMapping("/add")
   public String add(Model model) {
+      System.out.println(" *** COSHEA *** in add function *** COSHEA ***");
     model.addAttribute("transaction", new Transaction());
     return "add";
   }
