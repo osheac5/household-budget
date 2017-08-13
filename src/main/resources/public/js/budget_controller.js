@@ -43,7 +43,7 @@ angular.module('BudgetApp', ['ui.router'])
 
         // function to process the form
         $scope.processForm = function() {
-            console.log($scope.formData);
+            console.log($scope.formData.category);
             $http({
                       method: 'POST',
                       url: '/add',
