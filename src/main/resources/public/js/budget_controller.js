@@ -45,7 +45,9 @@ angular.module('BudgetApp', ['ui.router'])
         $scope.processForm = function() {
             $http({
                       method: 'POST',
-                      url: '/add'
+                      url: '/add',
+                      data: $scope.formData
+                      
                     }).then(function successCallback(response) {
                         console.log("woop");
                         $state.go('form.result');
