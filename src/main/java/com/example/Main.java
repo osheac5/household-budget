@@ -81,10 +81,17 @@ public class Main {
     return "add";
   }
 
-  @PostMapping("/add")
+  /*@PostMapping("/add")
   public String addTransaction(@ModelAttribute Transaction transaction) {
     return "result";
-  }
+  }*/
+
+    @PostMapping("/add")
+    public String addPost(Model model) {
+        System.out.println(" *** COSHEA *** in add function *** COSHEA ***");
+        model.addAttribute("transaction", new Transaction());
+        return "add";
+    }
 
 
   @RequestMapping("/db")
