@@ -43,17 +43,14 @@ angular.module('BudgetApp', ['ui.router'])
 
         // function to process the form
         $scope.processForm = function() {
-            alert('awesome!');
+            $http({
+                      method: 'GET',
+                      url: '/add'
+                    }).then(function successCallback(response) {
+                        console.log("woop")
+                      }, function errorCallback(response) {
+                        console.log("oops")
+                      });
         };
-
-        $http({
-          method: 'GET',
-          url: '/add'
-        }).then(function successCallback(response) {
-            console.log("woop")
-          }, function errorCallback(response) {
-            console.log("oops")
-          });
-
 
     });
