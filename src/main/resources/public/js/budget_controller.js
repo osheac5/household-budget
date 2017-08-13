@@ -34,7 +34,7 @@ angular.module('BudgetApp', ['ui.router'])
 
     // our controller for the form
     // =============================================================================
-    .controller('BudgetController', function($scope, $http) {
+    .controller('BudgetController', function($scope, $http, $state) {
 
         $scope.greeting = "What did you buy?";
 
