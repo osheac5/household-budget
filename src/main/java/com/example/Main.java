@@ -100,8 +100,10 @@ public class Main {
                 amount + ", " +
                 date + ";"
         );
+        System.out.println("*** Made it woohoo!: ");
         return "result";
       } catch (Exception e) {
+        System.out.println("*** OOPS ISSUE: " + e);
         return "error";
       }
     }
