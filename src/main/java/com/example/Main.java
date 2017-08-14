@@ -89,14 +89,14 @@ public class Main {
     @PostMapping("/add")
     public String addPost(@RequestParam("wola") String postStuff) {
         if (postStuff != null){
-            System.out.println(" *** COSHEA *** in add function *** COSHEA *** \r\n" + postStuff);
+            System.out.println(" *** COSHEA *** in add function *** COSHEA ***" + postStuff);
         }
         else {
             System.out.println(" *** COSHEA *** all null alla time! *** COSHEA *** \r\n");
         }
 
         //model.addAttribute("transaction", new Transaction());
-        return "add";
+        return "result";
     }
 
 
