@@ -8,7 +8,7 @@
 
     <div class="form-group details-group">
         <label th:for="date">Date</label>
-        <input type="text" class="form-control text-input input-lg details-input datepicker" name="date" ng-model="formData.date">
+        <input type="text" pick-a-date="date" class="form-control text-input input-lg details-input" name="date" ng-model="formData.date">
         {{ formData.date }}
     </div>
 
