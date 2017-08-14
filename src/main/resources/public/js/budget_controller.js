@@ -41,11 +41,12 @@ app.controller('BudgetController', function($scope, $http, $state) {
         // we will store all of our form data in this object
         $scope.formData = {};
 
+        $scope.formData.date = new Date();
+
         // function to process the form
         $scope.processForm = function(formData) {
             console.log(formData);
             console.log($scope.formData);
-            $scope.formData.date = new Date();
             $http({
                       method: 'POST',
                       url: '/add',
