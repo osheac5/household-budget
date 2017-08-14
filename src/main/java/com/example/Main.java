@@ -97,8 +97,8 @@ public class Main {
         Statement stmt = connection.createStatement();
         stmt.executeUpdate("INSERT INTO Purchase (UserID, CategoryID, Amount, Date) VALUES (1, " +
                 categoryId + ", " +
-                amount + ", " +
-                date + ";"
+                amount + ", '" +
+                date + "');"
         );
         System.out.println("*** Made it woohoo!: ");
         return "result";
