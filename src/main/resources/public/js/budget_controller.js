@@ -45,7 +45,7 @@ app.controller('BudgetController', function($scope, $http, $state) {
         $scope.processForm = function(formData) {
             console.log(formData);
             console.log($scope.formData);
-            $scope.date = new Date();
+            $scope.formData.date = new Date();
             $http({
                       method: 'POST',
                       url: '/add',
