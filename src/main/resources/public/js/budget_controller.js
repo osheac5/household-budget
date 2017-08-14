@@ -1,4 +1,4 @@
-app = angular.module('BudgetApp', ['ui.router'])
+app = angular.module('BudgetApp', ['ui.router', 'pickadate'])
     .config(function($stateProvider, $urlRouterProvider) {
 
         $stateProvider
