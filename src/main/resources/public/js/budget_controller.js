@@ -40,7 +40,7 @@ app.controller('BudgetController', function($scope, $http, $state) {
 
         // we will store all of our form data in this object
         $scope.formData = {};
-
+        debugger;
         $scope.formData.date = new Date();
 
         // function to process the form
