@@ -9,6 +9,13 @@
     <div class="form-group details-group">
         <label th:for="date">Date</label>
         <input type="text" class="form-control text-input input-lg details-input datepicker" name="date" ng-model="formData.date">
+        {{ formData.date }}
+    </div>
+
+    <div class="form-group details-group">
+        <label th:for="note">Note</label>
+        <input type="text" class="form-control text-input input-lg details-input datepicker" name="note" ng-model="formData.note">
+        {{ formData.note }}
     </div>
 
     <div class="submit-button">
