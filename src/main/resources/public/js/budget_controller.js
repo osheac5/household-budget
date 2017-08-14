@@ -42,12 +42,12 @@ app.controller('BudgetController', function($scope, $http, $state) {
         $scope.formData = {};
 
         // function to process the form
-        $scope.processForm = function() {
-            console.log($scope.formData.category);
+        $scope.processForm = function(formData) {
+            console.log(formData);
             $http({
                       method: 'POST',
                       url: '/add',
-                      params: $scope.formData
+                      params: formData
 
                     }).then(function successCallback(response) {
                         console.log("woop");
