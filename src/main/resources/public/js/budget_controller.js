@@ -34,7 +34,7 @@ angular.module('BudgetApp', ['ui.router'])
 
     // our controller for the form
     // =============================================================================
-    .controller('BudgetController', function($scope, $http, $state) {
+app.controller('BudgetController', function($scope, $http, $state) {
 
         $scope.greeting = "What did you buy?";
 
@@ -47,7 +47,7 @@ angular.module('BudgetApp', ['ui.router'])
             $http({
                       method: 'POST',
                       url: '/add',
-                      params: $scope.formData
+                      params: {'wola': 'wolawolawola'}
 
                     }).then(function successCallback(response) {
                         console.log("woop");
