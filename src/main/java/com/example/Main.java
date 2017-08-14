@@ -36,6 +36,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Map;
 
 @Controller
@@ -89,9 +90,20 @@ public class Main {
 
     @PostMapping("/add")
     public String addPurchase(@RequestParam("category") int categoryId,
-                              @RequestParam("amount") BigDecimal amount) {
+                              @RequestParam("amount") BigDecimal amount,
+                              @RequestParam("date") Date date){
 
+      try (Connection connection = dataSource.getConnection()) {
+        Statement stmt = connection.createStatement();
+        stmt.executeUpdate("INSERT INTO Purchase (UserID, CategoryID, Amount, Date) VALUES (1, " +
+                categoryId + ", " +
+                amount + ", " +
+                date + ";"
+        );
         return "result";
+      } catch (Exception e) {
+        return "error";
+      }
     }
 
 
