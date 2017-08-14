@@ -44,6 +44,7 @@ app.controller('BudgetController', function($scope, $http, $state) {
         // function to process the form
         $scope.processForm = function(formData) {
             console.log(formData);
+            console.log($scope.formData);
             $http({
                       method: 'POST',
                       url: '/add',

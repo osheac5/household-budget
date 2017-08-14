@@ -30,6 +30,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import javax.sql.DataSource;
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -87,15 +88,9 @@ public class Main {
   }*/
 
     @PostMapping("/add")
-    public String addPost(@RequestParam("category") String postStuff) {
-        if (postStuff != null){
-            System.out.println(" *** COSHEA *** in add function *** COSHEA ***" + postStuff);
-        }
-        else {
-            System.out.println(" *** COSHEA *** all null alla time! *** COSHEA *** \r\n");
-        }
+    public String addPurchase(@RequestParam("category") int categoryId,
+                              @RequestParam("amount") BigDecimal amount) {
 
-        //model.addAttribute("transaction", new Transaction());
         return "result";
     }
 
