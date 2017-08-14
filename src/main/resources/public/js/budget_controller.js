@@ -1,4 +1,4 @@
-angular.module('BudgetApp', ['ui.router'])
+app = angular.module('BudgetApp', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
 
         $stateProvider
