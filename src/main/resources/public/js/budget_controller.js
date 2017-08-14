@@ -47,7 +47,7 @@ angular.module('BudgetApp', ['ui.router'])
             $http({
                       method: 'POST',
                       url: '/add',
-                      data: {'wola': 'wolawolawola'}
+                      params: {'wola': 'wolawolawola'}
 
                     }).then(function successCallback(response) {
                         console.log("woop");
