@@ -47,7 +47,7 @@ app.controller('BudgetController', function($scope, $http, $state) {
             $http({
                       method: 'POST',
                       url: '/add',
-                      params: $scope
+                      params: $scope.formData
 
                     }).then(function successCallback(response) {
                         console.log("woop");
