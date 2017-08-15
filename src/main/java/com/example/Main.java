@@ -89,6 +89,7 @@ public class Main {
   }*/
 
     @PostMapping("/add")
+    @ResponseBody
     public String addPurchase(@RequestParam("category") int categoryId,
                               @RequestParam("amount") BigDecimal amount,
                               @RequestParam("date") Date date){
@@ -100,11 +101,10 @@ public class Main {
                 amount + ", '" +
                 date + "');"
         );
-        System.out.println("*** Made it woohoo!: ");
-        return "result";
+        return "Category: " + categoryId + "\r\n€" + amount + "\r\n" + date;
       } catch (Exception e) {
-        System.out.println("*** OOPS ISSUE: " + e);
-        return "error";
+        System.out.println("OOPS ISSUE: " + e);
+        return "error: " + e;
       }
     }
 

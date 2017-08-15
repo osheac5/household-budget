@@ -52,10 +52,10 @@ app.controller('BudgetController', function($scope, $http, $state) {
                       params: formData
 
                     }).then(function successCallback(response) {
-                        console.log("woop");
+                        $scope.response = response;
                         $state.go('form.result');
                       }, function errorCallback(response) {
-                        console.log("oops")
+                        $scope.response = response;
                       });
         };
 
