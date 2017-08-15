@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $date = $('.datepicker');
-  $date.pickadate();
+  $date = $('#date_input');
   $date.val($.datepicker.formatDate('d MM, yy', new Date()));
 })
